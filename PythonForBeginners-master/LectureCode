@@ -1,0 +1,42 @@
+#Hello World!	
+print(“Hello World!”)
+
+#Why use Lists?
+print(scores[-1]) >> 58
+
+#Add and remove elements from a list
+sample_list = [1,2,3,4,5,6,7]
+print(sample_list)
+n = sample_list.pop(1)
+print(sample_list)
+sample_list.append(n)
+print(sample_list)
+
+#Result:
+#[1,2,3,4,5,6,7]
+#[1,3,4,5,6,7]
+#[1,3,4,5,6,7,2]
+
+
+
+#For loop vs While loop (Fibonacci series)
+num = 0
+num1 = 1
+num2 = 1
+
+while(num < 8):
+    num = num1
+    print(num)
+    num1 = num2
+    num2 = num + num1
+
+
+#Write a function to compute area of a square (functions for triangle and circle)
+def area_triangle(height, base):
+    area = height * base * 0.5
+    return area
+
+def area_circle(radius):
+    area = radius * radius * 3.1415
+    return area
+
